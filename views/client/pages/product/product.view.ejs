@@ -20,20 +20,22 @@
       </div>
 
       <div class="row">
+        <% productDataList.forEach(productItem => {%>
         <div class="col-3 mb-3">
           <div class="product-item">
             <div class="inner-image">
-              <img src="client/images/iPhone-9-plus-gia-bao-nhieu.jpg" alt="sản phẩm" />
+              <img src="<%= productItem.thumbnail %>" alt="<%= productItem.title %>" />
             </div>
             <div class="inner-content">
-              <h3 class="inner-title">Iphone 9</h3>
-              <div class="inner-price-new">80$</div>
-              <div class="inner-price-old">100$</div>
-              <div class="inner-discount">-20%</div>
+              <h3 class="inner-title"><%= productItem.title %></h3>
+              <div class="inner-price-new"><%= productItem.newPrice.toFixed(2) %>$</div>
+              <div class="inner-price-old"><%= productItem.price %>$</div>
+              <div class="inner-discount"><%= productItem.discountPercentage %>%</div>
             </div>
           </div>
         </div>
         <!-- End Product Item -->
+        <%}); %>
       </div>
     </div>
     <%- include("../../layouts/footer.view.ejs") %>
