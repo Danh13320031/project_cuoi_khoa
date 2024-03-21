@@ -11,7 +11,7 @@
 }
 
 .header .inner-logo .logo-image {
-  max-height: 50px;
+  max-height: 30px;
   max-width: 100%;
 }
 
@@ -28,7 +28,18 @@
 }
 
 .header .inner-menu > .menu-list > .menu-item {
-  margin-left: 20px;
+}
+
+.header .inner-menu > .menu-list > .menu-item > .menu-link {
+  color: black;
+  text-decoration: none;
+  padding: 15px 20px;
+  transition: 0.3s ease-out;
+}
+
+.header .inner-menu > .menu-list > .menu-item > .menu-link:hover {
+  color: white;
+  background: #f57f20;
 }
 /* End Header */
 
