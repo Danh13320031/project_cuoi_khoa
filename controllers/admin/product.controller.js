@@ -6,7 +6,7 @@ const index = async (request, response, next) => {
 
     response.status(200);
     response.render('admin/pages/product/product.view.ejs', {
-      pageTitle: 'Product Page',
+      pageTitle: 'Trang quản lý sản phẩm',
       productListData,
     });
   } catch (error) {
