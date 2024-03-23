@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 const objSchema = {
+  id: { type: Schema.Types.ObjectId, require: true, unique: true },
   title: { type: String, require: true },
   description: { type: String, require: true },
   price: { type: Number, require: true },
