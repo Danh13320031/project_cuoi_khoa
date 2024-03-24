@@ -1,5 +1,5 @@
-const prefixAdmin = {
-  routeAdmin: '/admin',
+const configAdmin = {
+  PREFIX_ADMIN: '/admin',
 };
 
-export default prefixAdmin;
+export default configAdmin;

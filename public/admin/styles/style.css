@@ -1,0 +1,53 @@
+/* Start Header */
+.header {
+  padding: 10px 0px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #ffffff;
+  box-shadow: 3px 0px 17px rgba(0, 0, 0, 0.055);
+}
+
+.header .inner-logo .logo-link {
+  color: #2e2e2e;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: none;
+}
+/* End Header */
+
+/* Start Slider */
+.slider {
+  width: 200px;
+  height: 100vh;
+
+  position: fixed;
+  top: 56px;
+  left: 0px;
+
+  color: #3c3c3c;
+  background-color: #ffffff;
+  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.055);
+}
+
+.slider .inner-menu .menu-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.slider .inner-menu .menu-list .menu-item .menu-link {
+  padding: 6px 10px;
+  display: block;
+
+  color: #383838;
+  text-decoration: none;
+
+  border-bottom: 1px solid #dedede;
+  transition: 0.3s ease-out;
+}
+
+.slider .inner-menu .menu-list .menu-item .menu-link:hover {
+  background-color: #d7d7d7;
+}
+/* End Slider */
