@@ -13,7 +13,7 @@ const index = async (request, response, next) => {
     });
 
     response.render('client/pages/product/product.view.ejs', {
-      pageTitle: 'Trang danh sách sản phẩm',
+      pageTitle: 'Danh sách sản phẩm',
       productDataList,
     });
   } catch (error) {

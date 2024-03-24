@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= pageTitle %></title>
+    <title>Trang <%= pageTitle %></title>
     <!-- Style -->
     <link
       rel="stylesheet"
@@ -16,7 +16,11 @@
     <%- include("../../layouts/header.view.ejs") %>
     <div class="container my-3">
       <div class="row">
-        <div class="col-12"><%- include("../../layouts/title.view.ejs") %></div>
+        <div class="col-12">
+          <div class="box-head">
+            <h2 class="inner-title"><%= pageTitle %></h2>
+          </div>
+        </div>
       </div>
 
       <div class="row">
