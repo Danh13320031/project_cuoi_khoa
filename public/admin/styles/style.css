@@ -1,53 +1,85 @@
 /* Start Header */
 .header {
+  width: 100%;
   padding: 10px 0px;
-  position: sticky;
+
+  position: fixed;
   top: 0;
   z-index: 999;
-  background-color: #ffffff;
-  box-shadow: 3px 0px 17px rgba(0, 0, 0, 0.055);
+
+  background: linear-gradient(45deg, #03122b, #021025);
+}
+
+.header .container-fluid {
+  padding-right: 0;
+  --bs-gutter-x: 1.5rem;
 }
 
 .header .inner-logo .logo-link {
-  color: #2e2e2e;
+  display: inline-block;
+  color: #ffffff;
   font-size: 24px;
   font-weight: 700;
   text-decoration: none;
 }
+.header .inner-logo i {
+  color: #fff;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 30px;
+}
 /* End Header */
 
 /* Start Slider */
-.slider {
+.body {
+  margin-top: 65px;
+}
+.body .slider {
   width: 200px;
   height: 100vh;
 
   position: fixed;
-  top: 56px;
+  top: 65px;
   left: 0px;
+  z-index: 555;
 
-  color: #3c3c3c;
-  background-color: #ffffff;
-  box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.055);
+  color: #ffffff;
+  background: linear-gradient(90deg, #0e032f, #03152f, #03152f, #03112a);
 }
 
-.slider .inner-menu .menu-list {
+.body .main .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  --bs-gutter-x: 27.5rem;
+}
+
+.body .slider .inner-menu .menu-list {
   padding: 0;
   margin: 0;
   list-style: none;
 }
 
-.slider .inner-menu .menu-list .menu-item .menu-link {
+.body .slider .inner-menu .menu-list .menu-item .menu-link {
   padding: 6px 10px;
   display: block;
 
-  color: #383838;
+  color: #ffffff;
   text-decoration: none;
 
-  border-bottom: 1px solid #dedede;
+  border-bottom: 1px solid #06224c;
   transition: 0.3s ease-out;
 }
 
-.slider .inner-menu .menu-list .menu-item .menu-link:hover {
-  background-color: #d7d7d7;
+.body .slider .inner-menu .menu-list .menu-item .menu-link:hover {
+  color: #2878ef;
+  background-color: #041c3f;
+}
+
+.body .slider .inner-menu .menu-list .menu-item .menu-link i {
+  margin-right: 15px;
+  transition: 0.3s ease-out;
+}
+.body .slider .inner-menu .menu-list .menu-item .menu-link:hover i {
+  color: #2878ef;
 }
 /* End Slider */
